@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name:"Description" content:"Accueil de mon site."/>
+        <meta name:"robots"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBGVEQZTPQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JBGVEQZTPQ');
+        </script>
+
+        <script type="text/javascript" src="burgerMenu.js"></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="newstyle.css"/>
+        <title>Cécilia Fornès - développeuse web</title>
+    </head>
+
+    <header>
+        <div id="root">
+          <div class="nav-links">
+      
+                  <!-- Classic Menu -->
+            <nav role="navigation" id="topnav_menu">
+      
+              <a id="home_link" class="topnav_link" href="accueil.html"><img src="img/logo-sur-fond-foncé.png" id="logo"></a>
+              <div class="dropdown">
+                <a class="drop-btn nav-link" href="pro.html">PROFESSIONNEL</a>
+                <div class="drop-content">
+                  <a class="nav-link" href="experiences.html">EXPERIENCES</a>
+                  <a class="nav-link" href="benevolat.html">BENEVOLATS</a>
+                  <a class="nav-link" href="competences.html">COMPETENCES</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="drop-btn nav-link" href="sco.html">SCOLAIRE</a>
+                <div class="drop-content">
+                  <a class="nav-link" href="formations.html">FORMATIONS</a>
+                  <a class="nav-link" href="certif.html">CERTIFICATIONS</a>
+                </div>     
+              </div> 
+              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              <a class="nav-link" href="loisirs.html">LOISIRS</a>
+              <a class="nav-link" href="contact.html">CONTACTS</a>
+      
+            </nav>
+      
+            <a id="topnav_hamburger_icon" href="javascript:void(0)" onclick="showResponsiveMenu()">
+                  <!-- Some spans to act as a hamburger -->
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+      
+                  <!--Hiding menu-->
+            <nav role="navigation" id="topnav_responsive_menu">
+              <ul>
+                <li><a class="topnav_link" href="accueil.html">ACCUEIL</a></li>
+                <li><a class="topnav_link" href="experiences.html">EXPERIENCES</a></li>
+                <li><a class="topnav_link" href="benevolat.html">BENEVOLATS</a></li>
+                <li><a class="topnav_link" href="formations.html">FORMATIONS<a></li>
+                <li><a class="topnav_link" href="certif.html">CERTIFICATIONS</a></li>
+                <li><a class="topnav_link" href="competences.html">COMPETENCES</a></li>
+                <li><a class="topnav_link" href="loisirs.html">LOISIRS</a></li>
+                <li><a class="topnav_link" href="contact.html">CONTACTS</a></li>
+              </ul>
+            </nav>
+      
+          </div>
+        </div>
+      </header>
+    
+    
+    <body>
+
+      <h1>CÉCILIA FORNÈS - DEVELOPPEUSE WEB</h1>
+      
+        <div class="portfolio" id="por"><h2>PORTFOLIO</h2></div>
+
+        <div id="dev-projects">
+
+          <article class="projects-dev" id="survey">
+            <a href="front-end-projects/fcc/survey-form.html" target="_blank">
+              <img class="screenshots" src="img/survey-form-fcc.png" alt="Capture d'écran de la page Formulaire de sondage"/>
+              <h3 class="project-dev-title"><span class="hovering-code"> < </span>Survey Form<span class="hovering-code"> /> </span></h3>
+            </a>
+            <p class="projects-dev-description">
+              Un formulaire de sondage réalisé en tant que projet pour la 
+              certification <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.
+            </p>
+          </article>
+
+          <article class="projects-dev" id="technical-documentation">
+            <a href="front-end-projects/fcc/technical-documentation.html" target="_blank">
+              <img class="screenshots" src="img/technical-documentation.png" alt="Capture d'écran de la page Documentation Technique"/>
+              <h3 class="project-dev-title"><span class="hovering-code"> < </span>Technical Documentation Page<span class="hovering-code"> /> </span></h3>
+            </a>
+            <p class="projects-dev-description">
+              Une page web de documentation technique sur JavaScript réalisé en tant que projet pour la 
+              certification <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.
+            </p>
+          </article>
+
+          <article class="projects-dev" id="landing-page">
+            <a href="front-end-projects/fcc/product-landing.html" target="_blank">
+              <img class="screenshots" src="img/product-landing.png" alt="Capture d'écran de la Landing Page"/>
+              <h3 class="project-dev-title"><span class="hovering-code"> < </span>Product Landing Page<span class="hovering-code"> /> </span></h3>
+            </a>
+            <p class="projects-dev-description">
+              Une landing page réalisée en tant que projet pour la 
+              certification <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.
+            </p>
+          </article>
+
+          <article class="projects-dev" id="peekaboo">
+            <a href="front-end-projects/html-css-js-project/project-1/index.html">
+              <img class="screenshots" src="img/peekaboo.png" alt="Capture d'écran du mini-jeu Peekaboo"/>
+              <h3 class="projects-dev-title"><span class="hovering-code"> < </span>Peekaboo<span class="hovering-code"> /> </span></h3>
+              <p class="projects-dev-description">
+                Un mini-jeu réalisé pour apprendre JavaScript.
+              </p>
+            </a>
+          </article>
+        </div>
+
+        <article class="projects-marketing-design" id="fast-delivery">
+            <h3>Création d'une identité graphique</h3>
+            <iframe class="iframe-projects" src="marketing-design/design-fast-delivery.pdf"></iframe>
+            <p>En groupe (avec Marie Q., Lucas T. et Fouzia Z.), nous avons créé
+            l'identité graphique d'une marque fictive : Fast Delivery. Nous
+            l'avons présentée dans ce document PDF tout en argumentant nos
+            choix.</p>
+        </article>
+
+        <article class="projects-marketing-design" id="loona">
+            <h3>Création d'une identité graphique et d'une stratégie de marketing 
+            digital</h3>
+            <iframe class="iframe-projects" src="marketing-design/design-marketing-loona.pdf"></iframe>
+            <p>En autonomie, j'ai créé toute une identité graphique à ce petbot
+            et me suis basée sur ce que faisait déjà l'entreprise qui commercialise
+            ce jouet en matière de marketing digital tout en apportant des 
+            améliorations à leur stratégie.</p>
+        </article>
+
+        <article class="projects-marketing-design" id="skyfall">
+            <h3>Création d'un design pour la presse écrite sur le film Skyfall</h3>
+            <iframe class="iframe-projects" src="marketing-design/dossier-press-skyfall.pdf"></iframe>
+            <p>En cours, nous avons eu plusieurs images et textes imposés pour créer
+            double page à destination de la presse écrite.</p>
+        </article>
+
+        <article class="projects-marketing-design" id="digital-kay">
+            <h3>Création d'une stratégie de marketing digital pour un projet personnel</h3>
+            <iframe class="iframe-projects" src="marketing-design/marketing-digital-kay.pdf"></iframe>
+            <p>En cours, nous avons dû créer une stratégie de marketing digital
+            pour un projet personnel.</p>
+        </article>
+
+        <article class="projects-marketing-design" id="st-jo">
+            <h3>Redesign du logo d'un des vins Saint-Joseph</h3>
+            <iframe class="iframe-projects" src="marketing-design/redesign-logo-st-jo.pdf"></iframe>
+            <p>En autonomie, nous avons dû réimaginer un logo au choix. J'ai
+            donc choisi l'une des étiquettes du vin, et l'ai redisgné. Dans
+            un premier temps, j'ai fais une proposition plus moderne,
+            puis j'ai choisi de partir dans quelques choses de plus artistique
+            basé uniquement sur la police : d'abord un logo inspiré de ceux des
+            groupes de metal, puis un deuxième inspiré par l'univers 
+            psychédélique.</p>
+        </article>
+
+    </body>
+
+
+    <footer>
+
+      <form method="post" id="form" action="https://formspree.io/f/xbjelbbn">
+
+            <h2 class="title-form">FORMULAIRE DE CONTACT</h2>
+        
+              <label for="nom">NOM</label>
+              <input type="text" name="nom" placeholder="FRYE" size="30"/>
+        
+              <label for="prénom">PRENOM</label>
+              <input type="text" name="prénom" placeholder="Evie" size="30"/>
+        
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" placeholder="evie.frye@syndicate.com" size="30"/>
+        
+              <label for="tel">TELEPHONE</label>
+              <input type="tel" name="tel" placeholder="0412345678" size="12"/>
+        
+              <label for="url">SITE WEB</label>
+              <input type="url" name="url" placeholder="https://cecilia-fornes.tech"/>
+        
+              <input type="submit" value="ENVOYER"/>
+
+          </form>
+
+    </footer>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name:"Description" content:"Cécilia FORNÈS, développeuse web"/>
+  <meta name:"robots"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBGVEQZTPQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JBGVEQZTPQ');
+  </script>
+
+  <script type="text/javascript" src="burgerMenu.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="newstyle.css"/>
+  <title>Cécilia Fornès - développeuse web</title>
+
+</head>
+
+<header>
+  <div id="root">
+    <div class="nav-links">
+
+            <!-- Classic Menu -->
+      <nav role="navigation" id="topnav_menu">
+
+        <a id="home_link" class="topnav_link" href="accueil.html"><img src="img/logo-sur-fond-foncé.png" id="logo"></a>
+        <div class="dropdown">
+          <a class="drop-btn nav-link" href="pro.html">PROFESSIONNEL</a>
+          <div class="drop-content">
+            <a class="nav-link" href="experiences.html">EXPERIENCES</a>
+            <a class="nav-link" href="benevolat.html">BENEVOLATS</a>
+            <a class="nav-link" href="competences.html">COMPETENCES</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="drop-btn nav-link" href="sco.html">SCOLAIRE</a>
+          <div class="drop-content">
+            <a class="nav-link" href="formations.html">FORMATIONS</a>
+            <a class="nav-link" href="certif.html">CERTIFICATIONS</a>
+          </div>     
+        </div> 
+        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+        <a class="nav-link" href="loisirs.html">LOISIRS</a>
+        <a class="nav-link" href="contact.html">CONTACTS</a>
+
+      </nav>
+
+      <a id="topnav_hamburger_icon" href="javascript:void(0)" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+            <!--Hiding menu-->
+      <nav role="navigation" id="topnav_responsive_menu">
+        <a id="r-home_link" class="r-topnav_link" href="accueil.html"><img src="img/logo-sur-fond-foncé.png" id="r-logo"></a>
+        <div class="r-dropdown">
+          <a class="r-drop-btn nav-link" href="pro.html">PROFESSIONNEL</a>
+          <div class="r-drop-content">
+            <a class="r-nav-link" href="experiences.html">EXPERIENCES</a>
+            <a class="r-nav-link" href="benevolat.html">BENEVOLATS</a>
+            <a class="r-nav-link" href="competences.html">COMPETENCES</a>
+          </div>
+        </div>
+        <div class="r-dropdown">
+          <a class="r-drop-btn nav-link" href="sco.html">SCOLAIRE</a>
+          <div class="r-drop-content">
+            <a class="r-nav-link" href="formations.html">FORMATIONS</a>
+            <a class="r-nav-link" href="certif.html">CERTIFICATIONS</a>
+          </div>     
+        </div> 
+        <a class="r-nav-link" href="portfolio.html">PORTFOLIO</a>
+        <a class="r-nav-link" href="loisirs.html">LOISIRS</a>
+        <a class="r-nav-link" href="contact.html">CONTACTS</a>
+        <ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<body>
+  
+  <h1>CÉCILIA FORNÈS - DEVELOPPEUSE WEB</h1>
+
+  <div class="accueil"><div id="acc"><h2>ACCUEIL</h2></div>
+    <img src="img/photo_de_moi.jpg" class="photodemoi" alt="Photo de Cécilia Fornès-Guechi">
+
+    <section class="presentation">
+      <p>
+        Jeune femme de 21 ans, <b>créative</b>, <b>polyvalente</b>, et qui <b>adore apprendre</b>, je suis à la recherche d'un <b>stage</b> à compter du <b>14 novembre 2023</b> et jusqu'au <b>6 février 2024</b> pour ma formation à <b>Human Booster</b> en <b>Développement Web et Web Mobile</b>. <span>😎</span> </br>
+        Je résume : </br></br>
+
+        <span>📅</span> Quand ? Du 14/11/23 au 06/02/24</br>
+        <span>📍</span> Où ? En France, mais une préférence pour la région Lyonnaise/St-Etienne</br>
+        <span>🌟</span> À savoir ! Le stage n'est pas rémunéré malgré sa longueur, c'est la Région AuRA qui me paiera</br></br>
+      </p>
+    </section>
+
+    <section>
+      <p>
+        Vous souhaitez me rencontrer ? Me recruter ? Me connaître un peu plus ?
+        Vous pouvez en savoir plus sur mon parcours professionnel 
+        <a href="experiences.html">ici</a> ! Vous voulez me connaître plus personnellement ? 
+        C'est <a href="loisirs.html">ici</a> ! Vous souhaitez connaître mes différents
+        diplômes et certifications ? Ce sera <a href="formations.html">là</a> ou 
+        <a href="certif.html">là</a> !
+      </p>
+    </section>
+  </div>
+
+    <footer>
+
+      <form method="post" id="form" action="https://formspree.io/f/xbjelbbn">
+
+        <h2 id="title-form">FORMULAIRE DE CONTACT</h2>
+  
+          <label for="nom">NOM</label>
+          <input type="text" name="nom" placeholder="FRYE" size="30"/>
+  
+          <label for="prenom">PRENOM</label>
+          <input type="text" name="prenom" placeholder="Evie" size="30"/>
+  
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" placeholder="evie.frye@syndicate.com" size="30"/>
+  
+          <label for="tel">TELEPHONE</label>
+          <input type="tel" name="tel" placeholder="0412345678" size="12"/>
+  
+          <label for="url">SITE WEB</label>
+          <input type="url" name="url" placeholder="https://cecilia-fornes.tech"/>
+  
+          <input type="submit" value="ENVOYER"/>
+
+      </form>
+
+    </footer>
+    
+</body>
