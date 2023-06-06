@@ -1,0 +1,461 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+html {
+  font-family: "Jost", sans-serif;
+}
+
+h2 {
+  font-family: "lemon_milkbold_italic", "Arial", serif;
+  font-size: 2.5em;
+  margin: 50px 50px 50px 10%;
+  text-shadow: 0.25rem 0.25rem #7BE495;
+  color: #205072;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+  color: grey;
+}
+
+p {
+  font-size: 1.4em;
+  color: #205072;
+  text-align: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+a {
+  color: #205072;
+}
+a:hover {
+  font-weight: bold;
+}
+
+body {
+  background-color: #ebebeb;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+  z-index: 100;
+  background-color: #CFF4D2;
+  border-radius: 2em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #329D9C;
+  border-radius: 2em;
+}
+
+@font-face {
+  font-family: "lemon_milkbold_italic";
+  src: url("/fonts/lemonmilk-bolditalic-webfont.eot");
+  src: url("/fonts/lemonmilk-bolditalic-webfont.eot#iefix") format("embedded-opentype"), url("/fonts/lemonmilk-bolditalic-webfont.woff2") format("woff2"), url("/fonts/lemonmilk-bolditalic-webfont.woff") format("woff"), url("/fonts/lemonmilk-bolditalic-webfont.ttf") format("truetype"), url("/fonts/lemonmilk-bolditalic-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: "lemon_milkregular_italic";
+  src: url("/fonts/lemonmilk-regularitalic-webfont.eot");
+  src: url("/fonts/lemonmilk-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/lemonmilk-regularitalic-webfont.woff2") format("woff2"), url("/fonts/lemonmilk-regularitalic-webfont.woff") format("woff"), url("/fonts/lemonmilk-regularitalic-webfont.ttf") format("truetype"), url("/fonts/lemonmilk-regularitalic-webfont.svg#lemon_milkregular_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(32, 80, 114);
+  background: linear-gradient(90deg, rgb(32, 80, 114) 0%, rgb(123, 228, 149) 100%);
+  margin: 50px 0 0 0;
+  z-index: 3;
+  height: 100px;
+  padding: 10px;
+}
+
+.infos > p {
+  color: #7BE495;
+  font-size: 0.75em;
+  margin: 0;
+}
+
+.links > a {
+  font-size: 1.4em;
+  font-family: "lemon_milkregular_italic", sans-serif;
+  text-decoration: none;
+  color: #7BE495;
+}
+
+.links > a:hover {
+  font-weight: bold;
+}
+
+footer > img {
+  height: 1.4em;
+  filter: invert(100%);
+}
+
+footer > a:last-of-type {
+  padding: 10px 20px;
+  background-color: #205072;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+}
+footer > a:last-of-type:hover {
+  font-weight: normal;
+  background-color: transparent;
+  border: 3px solid #205072;
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
+#title-form {
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+
+[type=submit] {
+  margin-top: 2%;
+  font-family: "lemon_milkbold_italic", "Arial", serif;
+  color: #205072;
+  background: #7BE495;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  margin-top: 200px;
+}
+formdiv + div {
+  margin-top: 1em;
+}
+form label {
+  font-family: "lemon_milkbold_italic", "Arial", serif;
+  color: #205072;
+  font-size: 1.4em;
+  width: 100%;
+  margin: 3% 5% 1% 10%;
+}
+form input {
+  box-sizing: border-box;
+  border: 3px solid #7BE495;
+  border-radius: 1em;
+  font-size: 1.4em;
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+  margin: 0 10% 2% 10%;
+  font-family: "Jost", "Arial", sans-serif;
+  background: #ebebeb;
+}
+form input:focus {
+  border: 2px solid #205072;
+}
+form input:not(:focus):invalid {
+  border: 2px, solid;
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #205072;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: auto;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #7BE495;
+  display: block;
+  transition: 0.3s;
+  font-family: "lemon_milkbold_italic";
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+ul {
+  list-style: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.drop-content {
+  display: none;
+  position: relative;
+  min-width: 160px;
+  text-decoration: none;
+}
+
+.drop-btn:hover .drop-content {
+  display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+header {
+  background: rgb(32, 80, 114);
+  background: linear-gradient(90deg, rgb(32, 80, 114) 0%, rgb(123, 228, 149) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3%;
+}
+
+h1 {
+  font-family: "lemon_milkbold_italic", "Arial", serif;
+  font-size: 2vw;
+  text-shadow: 0.2rem 0.2rem #7BE495;
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+  rotate: 180°;
+}
+
+header > img {
+  height: 50px;
+}
+
+header > span {
+  font-family: "lemon_milkbold_italic";
+  color: #205072;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.photodemoi {
+  width: 40vw;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  margin: -10px;
+  padding: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+  .landing-page {
+    flex-direction: column;
+  }
+  .photodemoi {
+    margin: 0 auto;
+  }
+}
+#dev-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-dev {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  background: #205072;
+  min-width: 45%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.screenshots {
+  width: 100%;
+}
+
+.project-dev-title {
+  color: #ebebeb;
+  text-align: center;
+}
+
+.hovering-code {
+  color: #205072;
+  transition: color 0.3s ease-out;
+}
+.hovering-code:hover {
+  color: #ebebeb;
+}
+
+.projects-dev-description {
+  color: #ebebeb;
+}
+
+.projects-dev-description a {
+  color: #ebebeb;
+}
+
+.projects-marketing-design {
+  text-align: center;
+}
+
+.iframe-projects {
+  width: 75%;
+  height: 70vh;
+}
+
+#body-sf {
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.survey-form {
+  max-width: 80%;
+  font-family: Tahoma, sans-serif;
+  color: white;
+  line-height: 1.4;
+  margin: auto auto;
+}
+
+.header-form-sf {
+  color: white;
+}
+
+#title-sf {
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+  font-family: Tahoma, sans-serif;
+}
+
+#description-sf {
+  text-align: center;
+  font-style: italic;
+  font-family: Tahoma, sans-serif;
+  color: white;
+  justify-content: center;
+}
+
+#survey-form {
+  width: 80%;
+  padding: 40px;
+  background-color: rgba(27, 27, 50, 0.8);
+  color: white;
+  font-family: Tahoma, sans-serif;
+  margin: auto;
+}
+
+#name-label-sf, #email-label-sf, #number-label-sf {
+  font-family: Tahoma, sans-serif;
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: medium;
+}
+
+#name-sf::-moz-placeholder, #email-sf::-moz-placeholder, #number-sf::-moz-placeholder {
+  font-family: Tahoma, sans-serif;
+  font-size: medium;
+  width: 80%;
+}
+
+#name-sf::placeholder, #email-sf::placeholder, #number-sf::placeholder {
+  font-family: Tahoma, sans-serif;
+  font-size: medium;
+  width: 80%;
+}
+
+#name-sf, #email-sf, #number-sf {
+  border-radius: 5px;
+}
+
+.input-sf, .input-survey {
+  display: inline-block;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  padding: 0;
+  margin-right: 0.625rem;
+  position: relative;
+  vertical-align: middle;
+  font-size: medium;
+}
+
+.questions-sf {
+  font-size: medium;
+  font-family: Tahoma, sans-serif;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  padding-top: 25px;
+}
+
+.label-checkbox-sf, .label-input-radio-sf {
+  font-family: Tahoma, sans-serif;
+}
+
+#features-sf, #role-sf {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+#comments {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.625rem;
+  font-family: inherit;
+  font-size: medium;
+  border-radius: 5px;
+  font-family: Tahoma, sans-serif;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 12px;
+  background-color: #37af65;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+}/*# sourceMappingURL=newstyle.css.map */

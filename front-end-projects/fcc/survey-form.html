@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name:"Description" content:"Accueil de mon site."/>
+        <meta name:"robots"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBGVEQZTPQ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JBGVEQZTPQ');
+        </script>
+
+        <script type="text/javascript" src="burgerMenu.js"></script>
+
+        <link rel="stylesheet" href="../newstyle.css"/>
+        <title>Cécilia Fornès - développeuse web fullstack</title>
+    </head>
+
+    <header>
+        <div id="root">
+            <div class="nav-links">
+  
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+  
+                    <a id="home_link" class="topnav_link" href="accueil.html"><img src="./design/logo-sur-fond-foncé.png" id="logo"></a>
+                    <a  class="nav-link" href="accueil.html">ACCUEIL</a>
+                    <div class="dropdown">
+                        <a class="drop-btn nav-link" href="pro.html">PROFESSIONNEL</a>
+                        <div class="drop-content">
+                            <a class="nav-link" href="experiences.html">EXPERIENCES</a>
+                            <a class="nav-link" href="benevolat.html">BENEVOLATS</a>
+                            <a class="nav-link" href="competences.html">COMPETENCES</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                    <a class="drop-btn nav-link" href="sco.html">SCOLAIRE</a>
+                        <div class="drop-content">
+                            <a class="nav-link" href="formations.html">FORMATIONS</a>
+                            <a class="nav-link" href="certif.html">CERTIFICATIONS</a>
+                        </div>     
+                    </div> 
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                    <a class="nav-link" href="loisirs.html">LOISIRS</a>
+                    <a class="nav-link" href="contact.html">CONTACTS</a>
+  
+                </nav>
+  
+                <a id="topnav_hamburger_icon" href="javascript:void(0)" onclick="showResponsiveMenu()">
+                <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+  
+              <!--Hiding menu-->
+                <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                        <li><a class="topnav_link" href="accueil.html">ACCUEIL</a></li>
+                        <li><a class="topnav_link" href="experiences.html">EXPERIENCES</a></li>
+                        <li><a class="topnav_link" href="benevolat.html">BENEVOLATS</a></li>
+                        <li><a class="topnav_link" href="formations.html">FORMATIONS<a></li>
+                        <li><a class="topnav_link" href="certif.html">CERTIFICATIONS</a></li>
+                        <li><a class="topnav_link" href="competences.html">COMPETENCES</a></li>
+                        <li><a class="topnav_link" href="loisirs.html">LOISIRS</a></li>
+                        <li><a class="topnav_link" href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </nav>
+  
+            </div>
+        </div>
+    </header>
+
+    <body id="body-sf">
+
+            <div class="survey-form">
+                <div id="header-form-sf">
+                    <h1 id="title-sf">freeCodeCamp Survey Form</h1>
+                    <p id="description-sf">Thank you for taking the time to help us improve the platform</p>
+                </div>
+
+            <form id="survey-form">
+
+                <label id="name-label-sf">Name: 
+                    <input id="name-sf" type="text" placeholder="Enter your name"/>
+                </label>
+                <label id="email-label-sf">Email: 
+                    <input id="email-sf" type="email" placeholder="Enter your email"/>
+                </label>
+                <label id="number-label-sf">Age (optional): 
+                    <input id="number-sf" type="number" min="13" max="120" placeholder="Age"/>
+                </label>
+
+                <div id="first-dropdown-sf">
+                    <p class="questions-sf">Which option best describes your current role?</p>
+                    <select id="role-sf">
+                        <option>Select current role</option>
+                        <option>Student</option>
+                        <option>Full time job</option>
+                        <option>Full time learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+            <div id="radio-choice-sf">
+                <p class="questions-sf">Would you recommend freeCodeCamp to a friend?</p>
+                <label for="input-radio" class="label-input-radio-sf">
+                    <input class="input-sf" type="radio" name="user-recommend" value="definitely">
+                    Definitely
+                </label>
+                <label for="input-radio" class="label-input-radio-sf">
+                    <input class="input-sf" type="radio" name="user-recommend" value="maybe">
+                    Maybe
+                </label>
+                <label for="input-radio" class="label-input-radio-sf">
+                    <input class="input-sf" type="radio" name="user-recommend" value="not-sure">
+                    Not sure
+                </label>        
+            </div>
+
+            <div id="favorite-feature-sf">
+                <p class="questions-sf">What is your favorite feature of freeCodeCamp?</p>
+                <select id="features-sf">
+                    <option class="option-sf">Challenges</option>
+                    <option class="option-sf">Projects</option>
+                    <option class="option-sf">Community</option>
+                    <option class="option-sf">Open Source</option>
+                </select>
+            </div>
+
+            <div id="improvement-fcc">
+                <p class="questions-sf">What would you like to see improved
+                    <span class="check">(Check all that apply)</span>
+                </p>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-survey">
+                    Front-end projects
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-survey">
+                    Back-end projects
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="data-visualization" type="checkbox" class="input-survey">
+                    Data visualization
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="challenges" type="checkbox" class="input-survey">
+                    Challenges
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-survey" id="input-checkbox">
+                    Open source community
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-survey">
+                    Gitter help rooms
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="videos" type="checkbox" class="input-survey">
+                    Videos
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="city-meetups" type="checkbox" class="input-survey">
+                    City meetups
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="wiki" type="checkbox" class="input-survey">
+                    Wiki
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="forum" type="checkbox" class="input-survey">
+                    Forum
+                </label>
+                <label for="input-checkbox" class="label-checkbox-sf">
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-survey">
+                    Additional courses
+                </label>
+                </div>
+
+                <div class="textarea">
+                    <p class="questions-sf">Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+                </div>
+
+                <button class="submit-button" type="submit" id="submit">Submit</button>
+
+            </form>
+    </div>
+
+    </body>
+
+</html>

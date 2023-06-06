@@ -1,0 +1,14 @@
+{
+  "name": "site-cecilia",
+  "version": "1.0.0",
+  "description": "site cv",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./site-c/newstyle.scss:./site_c/newstyle.css",
+    "prefix": "postcss ./site-c/newstyle.css --use autoprefixer -d ./site-c"
+  },
+  "author": "Cécilia Fornès-Guechi",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
+

@@ -1,0 +1,53 @@
+#dev-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-dev {
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    background: $p-header-color;
+    min-width: 45%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.screenshots {
+    width: 100%;
+}
+
+.project-dev-title {
+    color: #ebebeb;
+    text-align: center;
+}
+
+.hovering-code {
+    color: $p-header-color;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+        color: #ebebeb;
+    }
+}
+
+.projects-dev-description {
+    color: #ebebeb;
+}
+
+.projects-dev-description a {
+    color: #ebebeb;
+}
+
+.projects-marketing-design {
+    text-align: center;
+}
+
+.iframe-projects {
+    width: 75%;
+    height: 70vh;
+}
+

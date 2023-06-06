@@ -1,0 +1,31 @@
+header {
+    background: rgb(32,80,114);
+    background: linear-gradient(90deg, rgba(32,80,114,1) 0%, rgba(123,228,149,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3%;
+}
+
+h1 {
+    font-family: 'lemon_milkbold_italic', 'Arial', serif;
+    font-size: 2vw;
+    text-shadow: .20rem .20rem $menu-color;
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+    rotate: 180°;
+}
+
+header > img {
+    height: 50px;
+}
+
+header > span {
+    font-family: 'lemon_milkbold_italic';
+    color: $p-header-color;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}

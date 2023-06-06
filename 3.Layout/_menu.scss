@@ -1,0 +1,65 @@
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $p-header-color;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: auto;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: $menu-color;
+  display: block;
+  transition: 0.3s;
+  font-family: "lemon_milkbold_italic";
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+ul {
+  list-style: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.drop-content {
+  display: none;
+  position: relative;
+  min-width: 160px;
+  text-decoration: none;
+}
+
+.drop-btn:hover .drop-content {
+  display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

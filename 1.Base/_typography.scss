@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'lemon_milkbold_italic';
+    src: url('/fonts/lemonmilk-bolditalic-webfont.eot');
+    src: url('/fonts/lemonmilk-bolditalic-webfont.eot#iefix') format('embedded-opentype'),
+         url('/fonts/lemonmilk-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/lemonmilk-bolditalic-webfont.woff') format('woff'),
+         url('/fonts/lemonmilk-bolditalic-webfont.ttf') format('truetype'),
+         url('/fonts/lemonmilk-bolditalic-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'lemon_milkregular_italic';
+  src: url('/fonts/lemonmilk-regularitalic-webfont.eot');
+  src: url('/fonts/lemonmilk-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/lemonmilk-regularitalic-webfont.woff2') format('woff2'),
+       url('/fonts/lemonmilk-regularitalic-webfont.woff') format('woff'),
+       url('/fonts/lemonmilk-regularitalic-webfont.ttf') format('truetype'),
+       url('/fonts/lemonmilk-regularitalic-webfont.svg#lemon_milkregular_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
